@@ -1,17 +1,18 @@
 {
     "name": "portbender",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "command_name": "portbender",
-    "extension_author": "TrustedSec",
-    "original_author": "TrustedSec",
-    "repo_url": "N/A",
-    "help": "portBender manager",
+    "extension_author": "MrAle98",
+    "original_author": "MrAle98",
+    "repo_url": "https://github.com/sliverarmory/Sliver-PortBender",
+    "help": "TCP Port Redirection Utility",
+    "long_help": "Usage:\n  portbender redirect <fakeDstPort> <redirectedPort> // Redirects the traffic from <fakeDstPort> to <redirectedPort>\n  portbender list // List the active redirection rules created with the redirect command\n  portbender remove <id> // Stop and remove a redirection rule with a given <id>\n\n",
     "entrypoint": "entrypoint",
     "files": [
-    {
-    "os": "windows",
-    "arch": "amd64",
-    "path": "SliverPortBender.dll"
-    }
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "SliverPortBender.dll"
+      }
     ]
-    }
+}
